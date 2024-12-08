@@ -1,11 +1,8 @@
-const moveButton = document.getElementById("move-button")
-const bio = document.getElementById("bio")
+const dateTime = document.getElementById("datetime")
 
-function move_bio() {
-    
+function updateDateTime() {
+    const now = new Date()
+    dateTime.textContent = now.toJSON().slice(0, 19)
 }
 
-moveButton.addEventListener('click', () => {
-    console.log("Button pressed")
-})
-
+setInterval(updateDateTime, 100)

@@ -12,11 +12,12 @@
 </head>
 <body>
     <header>
-        <h1>
+        <h1 id="name-title">
             <a class="link" href="/">
                 Oliver Papay
             </a>
         </h1>
+        <p id="datetime">0000</p>
 
         <nav class="navbar">
             <ul class="nav-list">
@@ -26,29 +27,58 @@
                 <li>
                     <a class="link" href="/experience">> Experience</a>
                 </li>
-                <li>
-                    <a class="link" href="/contact">> Contact</a>
-                </li>
             </ul>
         </nav>
+        <hr id="nav-bar-separator">
     </header>
 
     <main class="main-content">
-        <button id="move-button">
-            Move div down
-        </button>
-        <div class="section" id="bio">
-            <h2>Bio</h2>
-            <p>
-                Loerm ipsum dolor 
-            </p>
+        <div class="page-directory-container">
+            <small>
+                <a href="" class="link">/</a>
+            </small>
+        </div>
+        <div class="flex-container">
+            <div class="bio-container">
+                <h2>Bio</h2>
+                <p>
+                    New grad software engineer from the University of Iowa. 
+                    Interested in deep learning algorithms, 3D data visualization, and a touch of web development. 
+                    Experienced with Python and Javascript, including libraries and frameworks like Django, Flask, PyTorch, Numpy, Matplotlib, React, and Vue js.
+
+                </p>
+                <p>
+                    From Chicago, IL and currently based in Cedar Rapids, IA.
+                    See the "Education" and "Experience" tabs for further details.
+                </p>
+            </div >
+            <div class="profile-picture-container">
+                <img src="/assets/profile.jpg" class="profile-picture">
+            </div>
+            
         </div>
     </main>
 
     <footer class="footer">
+        <ul class="flex-container contact-list">
+            <li>
+                <a href="mailto:opapayy@gmail.com" class="link">
+                    <i class="fa-solid fa-envelope"></i>
+                    opapayy@gmail.com
+                </a>
+            </li>
+            <li>
+                <a href="www.linkedin.com/in/oliver-papay-683653258" class="link">
+                    <i class="fa-brands fa-linkedin"></i>
+                    Oliver Papay
+                </a>
+                
+            </li>
+        </ul>
         <p>&copy; <span>2024</span> Oliver Papay. All rights reserved.</p>
     </footer>
 
     <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/4592f56230.js" crossorigin="anonymous"></script>
 </body>
 </html>

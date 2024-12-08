@@ -14,31 +14,85 @@
 </head>
 <body>
     <header>
-        <h1>
-            <a href="/">
+        <h1 id="name-title">
+            <a class="link" href="/">
                 Oliver Papay
             </a>
         </h1>
+        <p id="datetime">0000</p>
 
         <nav class="navbar">
-            <ul>
+            <ul class="nav-list">
                 <li>
-                    <a class="link" href="/education">Education</a>
+                    <a class="link" href="/education">> Education</a>
                 </li>
                 <li>
-                    <a class="link" href="/experience">Experience</a>
-                </li>
-                <li>
-                    <a class="link" href="/contact">Contact</a>
+                    <a class="link" href="/experience">> Experience</a>
                 </li>
             </ul>
         </nav>
+        <hr id="nav-bar-separator">
     </header>
-    <main>
-        This is the experience page
-    </main>
-    <footer>
 
+    <main class="main-content">
+        <div class="page-directory-container">
+            <small>
+                <a href="/" class="link">/</a>
+            </small>
+            <small>
+                >
+            </small>
+            <small>
+                <a href="/experience/" class="link">experience</a>
+            </small>
+        </div>
+        <h2>RTX - Collins Aerospace</h2>
+        <p>Software engineer intern</p>
+        <p>Cedar Rapids, IA : Summer 2024</p>
+        <h3>Highlights</h3>
+        <ul class="bulleted-list">
+            <li>
+                Worked with PyTorch to implement several deep reinforcement learning (DRL) environments leveraging
+                physics/radio comms simulations.
+            </li>
+            <li>
+                Integrated custom environments with cleanRL proximal policy optimization algorithm for DRL AI agent
+                training on CUDA cores.
+            </li>
+            <li>
+                Discovered and corrected critical computation error regarding rotation matrix representations of 3D
+                orientation, saving valuable troubleshooting time
+            </li>
+            <li>
+                Developed suite of visualization tools for DRL environments, utilizing Matplotlib, OpenCV, and Python’s
+                Ursina Engine for 3D rendering of physics/comms simulations
+            </li>
+            <li>
+                Helped deliver comprehensive project demonstration for AI teams across the company
+            </li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <ul class="flex-container contact-list">
+            <li>
+                <a href="mailto:opapayy@gmail.com" class="link">
+                    <i class="fa-solid fa-envelope"></i>
+                    opapayy@gmail.com
+                </a>
+            </li>
+            <li>
+                <a href="www.linkedin.com/in/oliver-papay-683653258" class="link">
+                    <i class="fa-brands fa-linkedin"></i>
+                    Oliver Papay
+                </a>
+                
+            </li>
+        </ul>
+        <p>&copy; <span>2024</span> Oliver Papay. All rights reserved.</p>
     </footer>
+
+    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/4592f56230.js" crossorigin="anonymous"></script>
 </body>
 </html>
