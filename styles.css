@@ -1,0 +1,123 @@
+body {
+    font-family: "Ubuntu Mono";
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 0 20px;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+#name-title {
+    margin-bottom: 10px;
+}
+
+#datetime {
+    margin-top: 0;
+}
+
+.navbar {
+    border-top: 3px solid white;
+}
+
+.nav-list {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-list {
+        flex-direction: column;   
+    }
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+#nav-bar-separator {
+    margin: 0 5%;
+}
+
+.page-directory-container {
+    margin-top: 10px;
+}
+
+.page-directory-container small {
+    color: rgb(185, 185, 185);
+}
+
+.main-content {
+    min-height: 50rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.bio-container {
+    width: 50%
+}
+
+.profile-picture-container {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    .flex-container{
+      flex-direction: column;
+      align-items: center;
+    }
+    .bio-container {
+        width: 100%
+    }
+    .profile-picture-container {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+  }
+
+.profile-picture {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.footer {
+    border-top: 1px solid white;
+}
+
+.contact-list {
+    justify-content: space-around;
+}
+
+.contact-list li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-list {
+        align-items: flex-start;
+    }
+
+    .contact-list li {
+        margin-bottom: 10px;
+    }
+}
+
+.bulleted-list li {
+    margin-bottom: 10px;
+}
